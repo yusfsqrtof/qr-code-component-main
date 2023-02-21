@@ -1,0 +1,114 @@
+/* css reset from joshwcomeau.com */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+:root {
+    --clr-bg-100: #fff;
+    --clr-bg-900: #000;
+    --clr-neutral-100: #fff;
+    --clr-neutral-100: #000;
+    --clr-primary-1: #D6E2EF;
+    --clr-primary-2: #7B869D;
+    --clr-primary-3: #1F3150;
+    --font-normal: 400;
+    --font-bold: 700;
+}
+
+body {
+    background: var(--clr-primary-1);
+    padding: 6rem 2rem;
+}
+
+.container {
+    font-family: 'Outfit', sans-serif;
+    background: var(--clr-bg-100);
+    border-radius: 1rem;
+    max-width: calc(375px - 4rem) !important;
+}
+
+.img-container {
+    padding: 1rem 1rem 0;
+}
+
+.img-container img {
+    border-radius: .6rem;
+}
+
+.para-container {
+    padding: 1rem 2rem;
+}
+
+.para-container p:first-of-type {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--clr-primary-3);
+    font-weight: var(--font-bold);
+    font-weight: 900;
+    word-spacing: 1px;
+    line-height: 1.25;
+}
+
+.para-container p:last-of-type {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: .9375rem;
+    color: var(--clr-primary-2);
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+}
